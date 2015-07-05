@@ -1,0 +1,64 @@
+<% include header.html %>
+<body>
+
+<div class="page-wrap">
+    <!--Bootstrapped nav bar-->
+	<% include navbar.html %>
+  
+         <div id="pitch-header">
+                <div class="purple inline">
+                    <h1>PITCH DETECTION</h1>
+                </div>
+                <div class="angled-bottom purple-bottom"></div>
+        </div>
+
+        <div id="pitch_app_container">
+            <div>
+                <div id="instr">
+                    <h2>How to use:</h2>
+                    <ol>
+                    <li>Press the "BEGIN button to start <br>
+                        live audio detection"</li>
+                    <li>Can detect notes from <br>
+                        "G, A, A#, D, D#, E, F, C and C#"</li>
+                    <li>Make sure that you are in a quiet<br>
+                         room to avoid outside interference.</li>
+                    </ol>
+                </div>
+
+                <div id="detector" class="vague">
+                    <div class="pitch"><span id="pitch">--</span>Hz</div>
+                    <div class="note"><span id="note">--</span></div>   
+                    <canvas id="output"></canvas>
+                    <div id="detune">
+                        <span id="detune_amt">--</span>
+                        <span id="flat">cents &#9837;</span>
+                        <span id="sharp">cents &#9839;</span>
+                    </div>
+                </div>
+            
+                <a href="#" style="text-decoration:none">
+                
+                <div id="begin_button" >B E G I N</div></a>
+            </div>
+        </div>
+
+        <!-- just used for debugging
+        <canvas id="waveform" width="512" height="256"></canvas>
+        -->
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35593052-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<% include footer.html %>

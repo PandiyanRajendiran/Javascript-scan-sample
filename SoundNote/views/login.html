@@ -1,0 +1,67 @@
+<% include header.html %>
+<div class="page-wrap">
+
+    <!--Background Images -->
+    <img id="piano_img" src="/res/imgs/piano.jpg"/>
+    <img id="guitar_img" src="/res/imgs/guitar.jpg"/>
+    <img id="sheet_music_img" src="/res/imgs/sheet_music.jpg"/>
+
+    <div id="reg-content">
+        <div class="row">
+            <div id="signup_form_wrapper" class="col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10">
+                <form id="signup_form" method="post" action="/login" role="form">
+                    <div id="sign_up_container">
+                        <a href="/">
+                            <img id ="logo" src="/res/imgs/icons/logo.svg" alt="logo">
+                        </a>
+                        <% if(notif) { %>
+                        <p style="text-align: center; color: red"><%= notif %></p>
+                        <% }; %>
+                        <h3>Sign In</h3>
+                        <br>
+                        <div class="form-group">
+
+                            <input class="form-control input-lg" id="email"
+                            name="email" placeholder="Your Email" type="text" autofocus required>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control input-lg" id="pass"
+                            name="pass" placeholder="Password" type=
+                            "password" required>
+                        </div>
+
+                        <% if(fail >= 3) { %>
+                        <div align="center">
+                            <script type="text/javascript"
+                                src="http://www.google.com/recaptcha/api/challenge?k=6LcC6PcSAAAAACMG2wWFX-9TSxAqpl_xeiZUDQyi">
+                            </script>
+                            <noscript>
+                                <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcC6PcSAAAAACMG2wWFX-9TSxAqpl_xeiZUDQyi"
+                                    height="300" width="500" frameborder="0"></iframe><br>
+                                <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                                </textarea>
+                                <input type="hidden" name="recaptcha_response_field"
+                                value="manual_challenge">
+                            </noscript>
+                        </div>
+                        <% }; %>
+
+                        <div class="form-group">
+                            <button class="btn btn-success btn-lg" type=
+                                "submit">Submit</button>
+                        </div>
+                        <div class="form-group">
+                            <a href="/register"><p>Don't have an account?</p></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="push">
+    </div>
+
+</div> <!--End of page wrap-->
+<% include footer.html %>

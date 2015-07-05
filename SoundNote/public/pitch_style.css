@@ -1,0 +1,168 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html, body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	src: url('http://fonts.googleapis.com/css?family=Lato');
+}
+
+a {
+	text-decoration:none;
+}
+
+#pitch-header {
+	position: relative;
+	color: white;
+	font-size: 2em;
+	margin-bottom: -100px;
+	z-index: 1;
+}
+
+#pitch-header div:first-child {
+	width: 100%;
+	padding-left: 2em;
+}
+
+#pitch_app_container {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-image: url("img/guitar-knobs2.jpg");
+	background-origin: padding-box;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	white-space: nowrap;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+#pitch_app_container {
+	padding-top: 5em;
+}
+
+#instr {
+	width: 300px;
+	font-size: 20px;
+	text-align: left;
+	margin-right: 100px;
+}
+
+#insert ol > li {
+	position: relative;
+}
+#output {
+	width: 300px;
+	height: 42px;
+}
+
+
+/*FROM ORIGINAL STYLE SHEET in the url, "assignment2\public\style.css" */
+.purple {
+	background-color: #5E54A6;
+}
+
+.angled-bottom {
+	width: inherit;
+	height: 0;
+	border-right: 1500px solid transparent;
+	margin: 0;
+}
+
+.purple-bottom {
+	border-top: 100px solid #5E54A6;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: bolder;
+}
+
+.inline {
+	display: inline-block;
+}
+
+/***/
+
+#note {
+	font-size: 164px;
+	color: #5E54A6;
+}
+
+.droptarget {
+	background-color: #348781;
+}
+
+div.confident {
+	color: black;
+}
+
+div.vague {
+	color: lightgrey;
+}
+
+#note {
+	display: inline-block;
+	height:180px;
+	text-align: left;
+}
+
+#detector {
+	width: 300px; 
+	height: 300px; 
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.8); 
+	border-radius: 20px; 
+	text-align: center; 
+	padding-top: 10px;
+}
+
+.pitch {
+	color: #5E54A6;
+}
+
+#output {
+	width: 300px; height: 42px;
+}
+
+#flat {
+	display: none;
+}
+#sharp {
+	display: none;
+}
+
+.flat #flat {
+	display: inline;
+}
+
+.sharp #sharp {
+	display: inline;
+}
+
+.pitch_button {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#begin_button { width: 200px; 
+	height: 50px;
+	background-color: #3FC6F8;
+	border-radius: 10px; 
+	text-align: center;
+	text-decoration:none;
+	vertical-align: center;
+	font-family:Arial;
+	font-weight:bold;
+	color:white;
+	padding-top: 25px;
+	margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#begin_button:hover {
+	background-color: #02B4B8;
+	color:white;
+}

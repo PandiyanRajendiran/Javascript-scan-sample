@@ -1,0 +1,967 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+	font-family: 'Lato', sans-serif;
+	src: url('http://fonts.googleapis.com/css?family=Lato');
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+html * {
+	font-family: 'Lato', sans-serif !important;
+}
+
+body {
+	/*http://www.colorzilla.com/gradient-editor/*/
+	/*grey-white-grey gradient*/
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f2f2f2 0%, #ffffff 26%, #ffffff 49%, #ffffff 49%, #f2f2f2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(26%,#ffffff), color-stop(49%,#ffffff), color-stop(49%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f2f2f2 0%,#ffffff 26%,#ffffff 49%,#ffffff 49%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f2f2f2 0%,#ffffff 26%,#ffffff 49%,#ffffff 49%,#f2f2f2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f2f2f2 0%,#ffffff 26%,#ffffff 49%,#ffffff 49%,#f2f2f2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f2f2f2 0%,#ffffff 26%,#ffffff 49%,#ffffff 49%,#f2f2f2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*
+change default text-selection colour
+http://css-tricks.com/overriding-the-default-text-selection-color-with-css/
+*/ 
+::selection {
+	color: white;
+	background: #5E54A6;; /* Safari */
+	}
+
+::-moz-selection {
+	color: white;
+	background: #5E54A6;; /* Firefox */
+}
+
+/*change default text-selection colour for PURPLE BACKGROUND*/
+.purple ::selection {
+	color: #09D588;
+	background: white;
+}
+
+.purple ::-moz-selection {
+	color: #09D588;
+	background: white;
+}
+
+nav {
+	z-index: 1000;
+}
+
+#logo {
+	height: 95%;
+	float: left;
+	margin-top: 2px;
+	margin-left: 5px;
+}
+
+.nav.nav-pills a{
+	color: #09D588;
+}
+
+.page-wrap {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -350px;
+	overflow: hidden;
+}
+
+/*
+footer reference code:
+css
+http://ryanfait.com/sticky-footer/layout.css;
+html code
+http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+*/
+
+footer, .push {
+	height: 350px;
+}
+
+footer {
+	background-color: #333;
+	padding-top: 50px;
+	color: white;
+	text-align: center;
+	font-style: bold;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #09D588;
+}
+
+footer table {
+	width: 60%;
+	size: 1.5em;
+	color: white;
+	padding: 5px;
+	margin: 0 auto;
+	margin-top: 1em;
+	text-align: center;
+}
+
+footer thead {
+	text-align: left;
+}
+
+footer td {
+	width: 30%;
+	text-align: center;
+	vertical-align: top;
+}
+
+footer td ul {
+	list-style-type: none;
+}
+
+footer tr {
+	margin-bottom: 10px;
+}
+
+footer a{
+	size: 1.5em;
+	text-decoration: none;
+	font-weight: 5px;
+	color: white;
+}
+
+footer p {
+	padding-top: 2.5em;
+	padding-bottom: 1em;
+	color: #999;
+	size: 8px;
+	text-align: center;
+}
+
+
+footer, .page-wrap:after { /* sticky footer*/
+	height: 350px; 
+}
+h1 {
+	margin: 1em 0em;
+	font-size: 4em;
+	font-weight: 1px;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: bolder;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h4 {
+	color: #5E54A6;
+}
+
+/********************************************************************
+* LANDING PAGE - index.html
+*********************************************************************/
+
+#landing {
+	width: 100%;
+	padding-top: 10%;
+	margin: 0;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-image: url("res/imgs/piano-headphones.jpg");
+	background-origin: padding-box;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	white-space: nowrap;
+	font-size: 1em;
+}
+
+#landing div:first-child {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#landing img {
+	width: 50%;
+}
+
+#deco {
+	position: relative;
+	bottom: 0;
+	z-index: 100;
+}
+
+.override-pre {
+	overflow: hidden;
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+}
+
+#login-wrap {
+	width: 250px;
+	height: auto;
+	float: right;
+	z-index: 500;
+}
+
+#login-wrap input[name="email"] {
+	margin-bottom: 10px;
+}
+
+#intro-wrap {
+	width: 100%;
+	height: 0 auto;
+	padding: 2em;
+	color: white;
+	background-color: #09D588;
+	font-size: 1.5em;
+	font-style: bold;
+	text-align: left;
+}
+
+#intro {
+	margin: 1em;
+	height: inherit;
+}
+
+#brief div {
+	text-align: center;
+}
+
+.briefer {
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	padding: 50px 40px;
+	margin-right: 20px;
+	margin: 10px;
+	text-align: center;
+	color: #333;
+	font-size: 2em;
+	font-style: bold;
+}
+
+.briefer img {
+	width: 50px;
+	max-width: 50px;
+	height: 50px;
+	max-height: 50px;
+	margin-bottom: 30px;
+}
+
+.briefer div {
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/********************************************************************
+* REGISTRATION PAGE - register.html
+*********************************************************************/
+
+#piano_img, #guitar_img, #sheet_music_img {
+	top: -3px;
+	left: -3px;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: blur(2px);
+	position: absolute;
+	z-index: -1;
+}
+
+#reg-content {
+	padding: 1em 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+#sign_up_container{
+	margin-top: 15%;
+	padding: 30px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+	/*Glass Effect*/
+	border-radius:5px;
+	border-bottom: 1px solid;
+	border-bottom-color: #ccc;
+	border-bottom-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+
+	color: #09D588;
+}
+
+#sign_up_container p {
+	height: auto;
+	color: #09D588;
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+
+#sign_up_container img{
+	width: 70%;
+	margin: 0em 5em;
+}
+
+.form-group {
+	margin: 0 auto;
+	width: 75%;
+}
+
+button[type="submit"],
+button[type="login-submit"] {
+	font-weight: bolder;
+	width: 100%;
+	background-color: #09D588;
+	cursor: pointer;
+}
+
+/********************************************************************
+* ABOUT US PAGE - about.html
+*********************************************************************/
+
+#team {
+	background-color: #5E54A6;
+}
+#team img {
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+}
+#team h1 {
+	position: absolute;
+	top: 0;
+	margin-left: 1em;
+	z-index: 5;
+	color: #09D588;
+}
+#team-header {
+	position: absolute;
+	width: 40em;
+	top: 0;
+	border-right: 250px solid transparent;
+	border-top: 150px solid white;
+	color: #09D588;
+	z-index: 1;
+}
+
+#members {
+
+	margin-top: -200px;	
+	padding-left: 10px;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	background: transparent;
+}
+
+#members h2 {
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 1px 1px 1px #09D588;
+}
+
+.member {
+	position: relative;/*
+	margin-top: -150px;*/
+}
+
+.about-prof {
+	margin-left: -1000px;
+	margin-top: -150px;
+	height: 350px;
+	width: 300px;
+	padding: 1em;
+	margin: 3em 0em;
+	text-align: center;
+	vertical-align: top;
+	background-color: white;
+	border-radius: 30px;
+	z-index: 10;
+}
+
+.about-prof h3 {
+	color: #09D588;
+}
+
+
+#prof-descr {
+	position: relative;
+	height: 0px;
+	width: 0px;
+}
+
+.circle-wrap, 
+.circle-inner, 
+.circle-outer {
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.circle-inner {
+	margin: 0 auto;
+	background-color: #AFA3DC;
+	height: 150px;
+	width: 150px;
+}
+
+.circle-outer{
+	width: 200px;
+	height: 200px;
+	padding: 22px;
+	margin: 2em;
+	border: 1px solid #AFA3DC;
+	background-color: transparent white;
+}
+
+#soon, 
+#brandon, 
+#fiona, 
+#felix {
+	background-position: center;
+	background-size: 120%;
+}
+
+#soon {
+	background-image: url("res/imgs/soon-bw.jpg");
+	margin-bottom: -100px;
+}
+
+#brandon {
+	background-image: url("res/imgs/brandon-bw.jpg");
+}
+
+#fiona {
+	background-image: url("res/imgs/fiona-bw.jpg");
+}
+
+#felix {
+	background-image: url("res/imgs/dingyi-bw.jpg");
+}
+
+
+/********************************************************************
+* GAMES PAGE - games.html
+*********************************************************************/
+
+#game_container {
+	padding: 2em 0;
+	margin: 0;
+	text-align: center;
+	background-image: url("res/imgs/games-background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#game_container > * {
+    vertical-align: top;
+    text-align: center;
+}
+
+#game_container > div:nth-child(1) {
+	width: 100%;
+	margin-left: 1em;
+	color: white;
+	font-size: 2em;
+	text-align: left;
+}
+
+.game_data{
+	height: 320px;
+	width: 300px;
+	margin: 10px;
+	display: inline-block;
+	max-width: 300px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+
+	background: linear-gradient(to bottom, #ffffff 0%, #ededed 100%) repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    color: #333;
+}
+
+.game_data img {
+	width: 280px;
+	height: 200px;
+	border-radius: 10px;
+}
+.game_icon {
+	max-width: 20%;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+.game_data:hover {
+	color: blue;
+}
+
+#Result, #Difficulty {
+    color: #5E54A6;
+}
+
+/*Pitch Detector Styling */
+#pitch-header {
+	position: relative;
+	color: white;
+	font-size: 2em;
+	margin-bottom: -100px;
+	z-index: 1;
+}
+
+#pitch-header div:first-child {
+	width: 100%;
+	padding-left: 2em;
+}
+
+#pitch-header .purple.inline h1 {
+	margin: 0;
+	margin-top: 1em;
+	font-size: 2em;
+}
+
+#pitch_app_container {
+	position: relative;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-image: url("res/imgs/guitar-knobs2.jpg");
+	background-origin: padding-box;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	white-space: nowrap;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	padding-top: 5em;
+}
+
+#instr {
+	width: 300px;
+	font-size: 20px;
+	text-align: left;
+	margin-right: 2em;
+	margin: 0 auto;
+}
+
+#detector {
+	width: 300px; 
+	height: 300px; 
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.8); 
+	border-radius: 20px; 
+	text-align: center; 
+	padding-top: 10px;
+	margin: 2em;
+	margin: 0 auto;
+}
+
+#insert ol > li {
+	position: relative;
+}
+#output {
+	width: 300px;
+	height: 42px;
+}
+
+#note {
+	font-size: 164px;
+	color: #5E54A6;
+}
+
+.droptarget {
+	background-color: #348781;
+}
+
+div.confident {
+	color: black;
+}
+
+div.vague {
+	color: lightgrey;
+}
+
+#note {
+	display: inline-block;
+	height:180px;
+	text-align: left;
+}
+
+.pitch {
+	color: #5E54A6;
+}
+
+#output {
+	width: 300px; height: 42px;
+}
+
+#flat {
+	display: none;
+}
+#sharp {
+	display: none;
+}
+
+.flat #flat {
+	display: inline;
+}
+
+.sharp #sharp {
+	display: inline;
+}
+
+.pitch_button {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#begin_button { width: 200px; 
+	height: 50px;
+	background-color: #3FC6F8;
+	border-radius: 10px; 
+	text-align: center;
+	text-decoration:none;
+	vertical-align: center;
+	font-family:Arial;
+	font-weight:bold;
+	color:white;
+	padding-top: 15px;
+	margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#begin_button:hover {
+	background-color: #02B4B8;
+	color:white;
+}
+
+/********************************************************************
+* PROFILE PAGE - profile.html
+*********************************************************************/
+#prof-info-wrap {	
+	min-width: 290px;
+	width: 100%;
+	height: 235px;
+	padding: 5px;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
+#prof-basic-wrap {
+	min-width: 260px;
+	width: 75%;
+	height: inherit;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	/*Glass edge Effect*/
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(255, 255, 255, 0.8);
+	/*background-color: rgba(255, 255, 255, 0.2);*/
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	background-image: url("res/imgs/blossoms.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	text-align: center;
+}
+
+#prof-basic-wrap h1 {
+	font-size: 2em;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#prof-basic-wrap .circle-wrap {
+	margin: 0 auto;
+}
+
+#prof-rank-wrap {
+	float: bottom;
+	height: 61px;
+	background-color: rgba(18, 136, 65, 0.4);
+	border: 0.5px solid;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	color: white;
+	font-family: Lato;
+	font-size: 1em;
+	text-align: 7px left;
+}
+
+#game_score_graph{
+	margin-top:2%;
+	margin-left:45%;
+	vertical-align:center;
+	color:white;
+}
+#game_score_graph>*{
+	vertical-align:center;
+	color:white;
+}
+
+#game_1_score, #game_2_score, #game_3_score {
+	margin-top:5%;
+	margin-left:5%;
+	margin-bottom:5%;
+	background-color:white;
+	height:20px;
+} 
+
+#game_1_score{width:0px;}
+#game_2_score{width:0px;}
+#game_3_score{width:0px;}
+
+#prof-basic h1 {
+	font-weight: bolder;
+	size: 5em;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.game {
+	text-align: center;
+	padding: 20px;
+	background-color: #454545;
+}
+
+.game h1 {
+	color: white;
+}
+
+.game input[type="button"] {
+	border: 1px;
+	border-radius: 2px;
+	margin: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.modes-wrap {
+	text-align: left;
+	margin: 2em 0em;
+}
+
+.mode {
+	color: white;
+	background-color: #09D588;
+	border: #09D588 1px;
+	border-radius: 2px;
+	width: 10em;
+	height: 3em;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+.mode:hover {
+	background-color: white;
+	color: #09D588;
+}
+
+#choices-wrap {
+	text-align: center;	
+	margin: 2em;
+}
+
+.choice {
+	background-color: #5E54A6;
+	color: white;
+	width: 3em;
+	height: 3em;
+	font-size: 2em; 
+}
+
+#g2 .choice {
+	width: 10em;
+	font-size: 1.5em;
+}
+
+#g3 .choice {
+	width: 10em;
+	font-size: 1.5em;
+}
+
+.choice:hover {
+	background-color: white;
+	color: #5E54A6;
+}
+
+.actions-wrap {
+	text-align: center;
+	margin: 2em 0em;
+}
+
+.actions{
+	width: 7em;
+	height: 2em;
+	background-color: #3FC6F8;
+	color: #333;
+	font-size: 2em;
+
+}
+
+.actions:hover {
+	background-color: white;
+	color: #3FC6F8;
+}
+
+#prof-contact-wrap {
+	float: left;
+	min-width: 290px;
+	width: 24%;
+	height: 235px;
+	padding-top: 3em;
+	margin-bottom: 10px;
+	background-color: #5E54A6;
+	border-radius: 5px;
+	border-right: 0.5px solid;
+	border-bottom: 0.5px solid;
+	border-right-color: rgba(98, 84, 166, 0.2);
+	border-bottom-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	font-size: 1em;
+}
+
+#prof-contact {
+	margin: 0 auto;
+	border-radius: 5px;
+	font-size: 12px;
+	color: white;
+}
+
+#prof-contact td{
+	padding: 5px;
+}
+
+#prof-contact a {
+	color: white;
+	text-decoration: none;
+}
+
+#stats-wrap {
+	height: 30em;
+	width: 99%;
+	margin: 5px;
+	background-color: #02B4C8;
+	border-radius: 5px;
+	display:inline-block;
+	font-style: bold;
+}
+#stats-wrap > h1{
+	margin-left:40%;
+}
+#stats-wrap  p{
+	font-size:20px;
+}
+
+#stats-wrap table {
+	font-weight: 100px;
+	color: black;
+
+}
+
+/*This does not actually "crop" the image, it appears to."
+http://stackoverflow.com/questions/13582051/using-just-css-crop-img-keeping-aspect-without-distortion
+*/
+.center-crop {
+	height: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+.blur {
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.inline {
+	display: inline-block;
+}
+
+.angled-top {
+	width: inherit;
+	border-left: 1500px solid transparent;
+	margin: 0;
+}
+
+.turq-top {
+	border-bottom: 100px solid #09D588;
+}
+
+.purple-top {
+	border-bottom: 100px solid #5E54A6;
+}
+
+.dark-grey-top{
+	border-bottom: 100px solid #333;
+}
+
+.angled-bottom {
+	width: inherit;
+	height: 0;
+	border-right: 1500px solid transparent;
+	margin: 0;
+}
+
+.turq-bottom {
+	border-top: 100px solid #09D588;
+}
+
+.purple-bottom {
+	border-top: 100px solid #5E54A6;
+}
+
+.dark-grey-bottom {
+	border-top: 100px solid #333;
+}
+
+.purple {
+	background-color: #5E54A6;
+}
+
+.turquoise {
+	background-color: #09D588;
+}
+
+.light-turquoise {
+	background-color: #71F7C5;
+}
+
+.dark-grey {
+	background-color: #333;
+}

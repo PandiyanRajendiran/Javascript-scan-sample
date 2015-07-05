@@ -1,0 +1,76 @@
+<% include header.html %>
+<body>
+<div class="page-wrap">
+
+    <!--Bootstrapped nav bar-->
+    <% include navbar.html %>
+
+
+    <section id="g1" class="game">
+        <h1>Perfect Pitch Game</h1>
+
+        <form class="modes-wrap" action = ""> 
+            <!-- 1 Octave of notes -->
+            <input  type = "button" id="Easy" class="mode" value = "Easy" onclick="PerfectPitch.setDifficulty(1)" /> 
+            <!-- 2 Octaves of notes -->  
+            <input  type = "button" id="Medium" class="mode" value = "Medium" onclick="PerfectPitch.setDifficulty(2)" /> 
+            <!-- 3 Octaves of notes --> 
+            <input  type = "button" id="Hard" class="mode" value = "Hard" onclick="PerfectPitch.setDifficulty(3)" />  
+        </form>
+
+        <form action = "" class="choices-wrap"> 
+            <!--
+                        // Notes Table: 
+                        // C4  = 261.63 (middle C) 
+                        // C#4 = 277.18
+                        // D4  = 293.66
+                        // D#4 = 311.13
+                        // E4  = 329.63	
+                        // F4  = 349.23
+                        // F#4 = 369.99	
+                        // G4  = 392.00
+                        // G#4 = 415.30
+                        // A4  = 440.00			
+                        // A#4 = 466.16	
+                        // B4  = 493.88	
+                        // C5  = 523.26 (must always be a multiple of C4 for code to work) 
+                        -->		
+            <input  type = "button" id="noteA" class="choice" value = "A" onclick="PerfectPitch.setAnswer(220.00)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "A#" onclick="PerfectPitch.setAnswer(233.08)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "B" onclick="PerfectPitch.setAnswer(246.94)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "C" onclick="PerfectPitch.setAnswer(261.63)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "C#" onclick="PerfectPitch.setAnswer(277.18)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "D" onclick="PerfectPitch.setAnswer(293.66)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "D#" onclick="PerfectPitch.setAnswer(311.13)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "E" onclick="PerfectPitch.setAnswer(329.63)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "F" onclick="PerfectPitch.setAnswer(349.23)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "F#" onclick="PerfectPitch.setAnswer(369.99)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "G" onclick="PerfectPitch.setAnswer(392.00)" /> 
+            <input  type = "button" id="noteB" class="choice" value = "G#" onclick="PerfectPitch.setAnswer(415.30)" /> 
+        </form> 	
+
+        <form class="actions-wrap" action = ""> 
+            <!--	<input  type = "button" id="noteA" value = "A" /> -->
+            <input  type = "button" id="Play" class="actions" value = "Play" onclick="PerfectPitch.playSound()" /> 
+
+            <!--<input  type = "button" id="noteB" value = "B" /> -->
+            <input  type = "button" id="Stop" class="actions" value = "Stop" onclick="PerfectPitch.stopSound()" />
+
+            <!--<input  type = "button" id="noteB" value = "B" /> -->
+            <input  type = "button" id="NewNote" class="actions" value = "NewNote" onclick="PerfectPitch.generateNewNote()" />
+        </form> 
+
+
+        <h2 id = "Result"> 
+            Perfect Pitch 
+        </h2>
+        <h2 id = "Difficulty">  
+            Difficulty: Easy	
+        </h2>
+
+    </section>
+    <div class="push">
+    </div>
+
+</div> <!--End of page wrap-->
+<% include footer.html %>

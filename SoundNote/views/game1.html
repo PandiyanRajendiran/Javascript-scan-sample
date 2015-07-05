@@ -1,0 +1,90 @@
+<% include header.html %>
+<body>
+<div class="page-wrap">
+    <!--Bootstrapped nav bar-->
+    <% include navbar.html %>
+
+    <section id="g3" class="game">
+        <h1> Chord Idenfitifer Game </h1> 
+
+        <form class="modes-wrap" action = ""> 
+            <!-- 1 Octave of notes -->
+            <input  type = "button" id="Easy" class="mode" value = "Easy" onclick="ChordIdenfitifer.setDifficulty(3)" /> 
+            <!-- 2 Octaves of notes -->  
+            <input  type = "button" id="Medium" class="mode" value = "Medium" onclick="ChordIdenfitifer.setDifficulty(6)" /> 
+            <!-- 3 Octaves of notes --> 
+            <input  type = "button" id="Hard" class="mode" value = "Hard" onclick="ChordIdenfitifer.setDifficulty(9)" /> 
+        </form> 
+
+        <form class="choices-wrap" action = "">  
+            <!--
+                // Notes Table: 
+                // C4  = 261.63 (middle C) 
+                // C#4 = 277.18
+                // D4  = 293.66
+                // D#4 = 311.13
+                // E4  = 329.63	
+                // F4  = 349.23
+                // F#4 = 369.99	
+                // G4  = 392.00
+                // G#4 = 415.30
+                // A4  = 440.00			
+                // A#4 = 466.16	
+                // B4  = 493.88	
+                // C5  = 523.26 (must always be a multiple of C4 for code to work) 
+
+                // Semitones Table 
+                // 0 = Unison 
+                // 1 = Semitone
+                // 2 = Tone
+                // 3 = MinorThird
+                // 4 = MajorThird
+                // 5 = PerfectFourth
+                // 6 =  Tritone
+                // 7 = PerfectFifth
+                // 8 = MinorSixth
+                // 9 = MajorSixth
+                // 10 = MinorSeventh
+                // 11 = MajorSeventh
+                // 12 = PerfectOctave
+
+                // Chords Table (numbers refer to semitone table) 
+                // Major         : 0-4-7 	 (e.g. C-E-G )
+                // Minor         : 0-3-7 	 (e.g. C-D#-G)
+                // Major7th      : 0-4-7-11  (e.g. C-E-G-A#)
+                // PowerChord    : 0-7 	     (e.g. C-G) 
+                // Diminished    : 0-3-6     (e.g. C-D#-F#)
+                // Diminished7th : 0-3-6-9	 (e.g. C-D#-F#-A) 
+                // Augmented	 : 0-4-8	 (e.g. C-E-G#)
+                // Suspended2nd  : 0-2-7	 (e.g. C-D-G) 
+                // Suspended4th  : 0-5-7 	 (e.g. C-F-G) 
+                -->
+            <input  type = "button" id="Major" class="choice" value = "Major" onclick="ChordIdenfitifer.setAnswer(1)" /> 
+            <input  type = "button" id="Minor" class="choice" value = "Minor" onclick="ChordIdenfitifer.setAnswer(2)" /> 
+            <input  type = "button" id="Major7th" class="choice" value = "Major7th" onclick="ChordIdenfitifer.setAnswer(3)" /> 
+            <input  type = "button" id="PowerChord" class="choice" value = "PowerChord" onclick="ChordIdenfitifer.setAnswer(4)" /> 
+            <input  type = "button" id="Diminished" class="choice" value = "Diminished" onclick="ChordIdenfitifer.setAnswer(5)" /> 
+            <input  type = "button" id="Diminished7th" class="choice" value = "Diminished7th" onclick="ChordIdenfitifer.setAnswer(6)" /> 
+            <input  type = "button" id="Augmented" class="choice" value = "Augmented" onclick="ChordIdenfitifer.setAnswer(7)" /> 
+            <input  type = "button" id="Suspended2nd" class="choice" value = "Suspended2nd" onclick="ChordIdenfitifer.setAnswer(8)" />
+            <input  type = "button" id="Suspended4th" class="choice" value = "Suspended4th" onclick="ChordIdenfitifer.setAnswer(9)" /> 
+        </form> 	
+
+        <form class="actions-wrap" action = ""> 
+            <input  type = "button" id="Play" class="actions" value = "Play" onclick="ChordIdenfitifer.playSound()" /> 
+            <input  type = "button" id="NewChord" class="actions" value = "NewChord" onclick="ChordIdenfitifer.generateNewChord()" />
+        </form> 
+
+
+        <h2 id = "Result"> 
+            Chord Idenfitifer 
+        </h2>
+
+        <h2 id = "Difficulty">  
+            Difficulty: Easy	
+        </h2>
+    </section>
+    <div class="push">
+    </div>
+</div> <!--End of page wrap-->
+<% include footer.html %>

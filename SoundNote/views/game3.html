@@ -1,0 +1,86 @@
+<% include header.html %>
+<body> 
+<div class="page-wrap">
+
+    <!--Bootstrapped nav bar-->
+    <% include navbar.html %>
+
+
+    <section id="g2" class="game">
+        <h1> Relative Pitch Game </h1> 
+
+        <form class="modes-wrap" action = ""> 
+            <!-- 1 Octave of notes -->
+            <input  type = "button" id="Easy" class="mode" value = "Easy" onclick="RelativePitch.setDifficulty(4)" /> 
+            <!-- 2 Octaves of notes -->  
+            <input  type = "button" id="Medium" class="mode" value = "Medium" onclick="RelativePitch.setDifficulty(8)" /> 
+            <!-- 3 Octaves of notes --> 
+            <input  type = "button" id="Hard" class="mode" value = "Hard" onclick="RelativePitch.setDifficulty(13)" /> 
+        </form> 
+
+
+        <form action = "" class="choices-wrap"> 
+            <!--
+                    // Notes Table: 
+                    // C4  = 261.63 (middle C) 
+                    // C#4 = 277.18
+                    // D4  = 293.66
+                    // D#4 = 311.13
+                    // E4  = 329.63	
+                    // F4  = 349.23
+                    // F#4 = 369.99	
+                    // G4  = 392.00
+                    // G#4 = 415.30
+                    // A4  = 440.00			
+                    // A#4 = 466.16	
+                    // B4  = 493.88	
+                    // C5  = 523.26 (must always be a multiple of C4 for code to work) 
+
+                    // Semitones Table 
+                    // 0 = Unison
+                    // 1 = Semitone
+                    // 2 = Tone
+                    // 3 = MinorThird
+                    // 4 = MajorThird
+                    // 5 = PerfectFourth
+                    // 6 =  Tritone
+                    // 7 = PerfectFifth
+                    // 8 = MinorSixth
+                    // 9 = MajorSixth
+                    // 10 = MinorSeventh
+                    // 11 = MajorSeventh
+                    // 12 = PerfectOctave
+
+                    -->
+            <input  type = "button" id="Unison" class="choice" value = "Unison" onclick="RelativePitch.setAnswer(0)" /> 
+            <input  type = "button" id="Semitone" class="choice" value = "Semitone" onclick="RelativePitch.setAnswer(1)" /> 
+            <input  type = "button" id="Tone" class="choice" value = "Tone" onclick="RelativePitch.setAnswer(2)" /> 
+            <input  type = "button" id="MinorThird" class="choice" value = "MinorThird" onclick="RelativePitch.setAnswer(3)" /> 
+            <input  type = "button" id="MajorThird" class="choice" value = "MajorThird" onclick="RelativePitch.setAnswer(4)" /> 
+            <input  type = "button" id="PerfectFourth" class="choice" value = "PerfectFourth" onclick="RelativePitch.setAnswer(5)" /> 
+            <input  type = "button" id="Tritone" class="choice" value = "Tritone" onclick="RelativePitch.setAnswer(6)" /> 
+            <input  type = "button" id="PerfectFifth" class="choice" value = "PerfectFifth" onclick="RelativePitch.setAnswer(7)" /> 
+            <input  type = "button" id="MinorSixth" class="choice" value = "MinorSixth" onclick="RelativePitch.setAnswer(8)" /> 
+            <input  type = "button" id="MajorSixth" class="choice" value = "MajorSixth" onclick="RelativePitch.setAnswer(9)" /> 
+            <input  type = "button" id="MinorSeventh" class="choice" value = "MinorSeventh" onclick="RelativePitch.setAnswer(10)" /> 
+            <input  type = "button" id="MajorSeventh" class="choice" value = "MajorSeventh" onclick="RelativePitch.setAnswer(11)" /> 
+            <input  type = "button" id="PerfectOctave" class="choice" value = "PerfectOctave" onclick="RelativePitch.setAnswer(12)" /> 
+        </form> 
+
+        <form class="actions-wrap" action = ""> 
+            <input  type = "button" id="Play" class="actions" value = "Play" onclick="RelativePitch.playSound()" /> 
+            <input  type = "button" id="NewNotes" class="actions" value = "NewNotes" onclick="RelativePitch.generateNewNote()" />
+        </form> 	
+
+        <h2 id = "Result"> 
+            Relative Pitch 
+        </h2>
+
+        <h2 id = "Difficulty">  
+            Difficulty: Easy	
+        </h2>
+    </section>
+    <div class="push">
+    </div>
+</div> <!--End of page wrap-->
+<% include footer.html %>

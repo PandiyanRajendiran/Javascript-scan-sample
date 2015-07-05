@@ -1,0 +1,82 @@
+        <footer class="push">
+            <table id="footer-table-wrap">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4>Links</h4>
+                            <a href="/">Home</a>
+                            <br>
+                            <a href="/games">Games</a>
+                        </td>
+                        <td>
+                            <h4>Account</h4>
+                            <% if(!auth) { %>
+                                <a href="/login">Login</a>
+                                <br>
+                                <a href="/register">Register</a>
+                            <% } else { %>
+                                <a href="/profile">Profile</a>
+                            <% }; %>
+                        </td>
+                        <td>
+                            <h4>SoundNote</h4>
+                            <a href="/about">About Us</a>
+                        </td>
+                    </tr>                        
+              </tbody>
+            </table>
+            
+            <p>This website is a course project for CSC309H1 Summer 2014, at the University of Toronto - St. George.
+                <br>
+                <br>
+                 © 2014 Soon Chee Loong, Brandon Oliver, Fiona Leung, Ding Yi Lu
+                <br>
+                CSC 309H1 Summer 2014
+            </p>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <% if(pageTitle == 'Login' || pageTitle =='Registration') { %>
+            <script type="text/javascript"> //rotate through background images
+                $(document).ready(function() {
+                    var background = ['guitar', 'sheet_music', 'piano'];
+                    var curImg = 0;
+                    var nextImg = 1;
+                    var maxImg = 2;
+                    $('#' + background[1] + '_img').fadeOut();
+                    $('#' + background[2] + '_img').fadeOut();
+
+                    //Rotate background images.
+                    window.setInterval(function() {
+                        $('#' + background[nextImg] + '_img').fadeIn('slow');
+                        $('#' + background[curImg] + '_img').fadeOut('slow');
+                        curImg++;
+                        nextImg++;
+                        if(curImg > maxImg){
+                            curImg = 0;
+                        }
+                        if(nextImg > maxImg){
+                            nextImg = 0;
+                        }
+                    }, 8000);
+                });
+        </script>
+        <% }; %>
+        <% if(pageTitle == 'Chord Identifier Game') { %>
+            <script src="/game1.js"></script>
+        <% }; %>
+        <% if(pageTitle == 'Perfect Pitch Game') { %>
+            <script src="/game2.js"></script>
+        <% }; %>
+        <% if(pageTitle == 'Relative Pitch Game') { %>
+            <script src="/game3.js"></script>
+        <% }; %>
+        <% if(pageTitle == 'Pitch Detection') { %>
+            <script src="/pitchdetect.js"></script>
+        <% }; %>
+
+    </body>
+</html>

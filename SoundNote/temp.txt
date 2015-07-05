@@ -1,0 +1,152 @@
+
+> bcrypt@0.7.8 install C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt
+> node-gyp rebuild
+
+
+C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (rebuild) 
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+  blowfish.cc
+  bcrypt.cc
+  bcrypt_node.cc
+..\src\bcrypt.cc(232): warning C4267: '=' : conversion from 'size_t' to 'unsigned char', possible loss of data [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xlocale(337): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc (..\src\bcrypt_node.cc) [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(54): error C2039: 'Dispose' : is not a member of 'v8::Persistent<v8::Function,v8::NonCopyablePersistentTraits<T>>' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          with
+          [
+              T=v8::Function
+          ]
+..\src\bcrypt_node.cc(128): error C2065: 'uv_work_t' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(128): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(128): error C2448: 'GenSaltAsync' : function-style initializer appears to be a function definition [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(137): error C2065: 'uv_work_t' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(137): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(137): error C2448: 'GenSaltAsyncAfter' : function-style initializer appears to be a function definition [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(164): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(164): error C2143: syntax error : missing ',' before '&' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(165): error C2248: 'v8::HandleScope::HandleScope' : cannot access protected member declared in class 'v8::HandleScope' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(816) : see declaration of 'v8::HandleScope::HandleScope'
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(800) : see declaration of 'v8::HandleScope'
+..\src\bcrypt_node.cc(167): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(167): error C2228: left of '.Length' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          type is 'unknown-type'
+..\src\bcrypt_node.cc(168): error C2039: 'New' : is not a member of 'v8::String' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(1599) : see declaration of 'v8::String'
+..\src\bcrypt_node.cc(168): error C3861: 'ThrowException': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(168): error C3861: 'New': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(171): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(171): error C2228: left of '.As' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(171): error C2059: syntax error : ')' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(171): error C2143: syntax error : missing ';' before '{' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(172): error C2039: 'New' : is not a member of 'v8::String' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(1599) : see declaration of 'v8::String'
+..\src\bcrypt_node.cc(172): error C3861: 'ThrowException': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(172): error C3861: 'New': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(175): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(175): error C2227: left of '->Int32Value' must point to class/struct/union/generic type [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(176): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(176): error C2228: left of '.As' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(176): error C2059: syntax error : ')' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(177): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(182): error C2660: 'v8::PersistentBase<T>::New' : function does not take 1 arguments [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          with
+          [
+              T=v8::Function
+          ]
+..\src\bcrypt_node.cc(185): error C2065: 'uv_work_t' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(185): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(185): error C2061: syntax error : identifier 'uv_work_t' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(186): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(186): error C2227: left of '->data' must point to class/struct/union/generic type [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          type is 'unknown-type'
+..\src\bcrypt_node.cc(187): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(187): error C2065: 'GenSaltAsync' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(187): error C2065: 'uv_after_work_cb' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(187): error C2146: syntax error : missing ')' before identifier 'GenSaltAsyncAfter' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(187): error C2059: syntax error : ')' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(189): error C2660: 'v8::Undefined' : function does not take 0 arguments [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(187): error C3861: 'uv_queue_work': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(187): error C3861: 'uv_default_loop': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(192): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(192): error C2143: syntax error : missing ',' before '&' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(193): error C2248: 'v8::HandleScope::HandleScope' : cannot access protected member declared in class 'v8::HandleScope' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(816) : see declaration of 'v8::HandleScope::HandleScope'
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(800) : see declaration of 'v8::HandleScope'
+..\src\bcrypt_node.cc(195): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(195): error C2228: left of '.Length' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          type is 'unknown-type'
+..\src\bcrypt_node.cc(196): error C2039: 'New' : is not a member of 'v8::String' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(1599) : see declaration of 'v8::String'
+..\src\bcrypt_node.cc(196): error C3861: 'ThrowException': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(196): error C3861: 'New': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(199): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(199): error C2228: left of '.As' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(199): error C2059: syntax error : ')' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(199): error C2143: syntax error : missing ';' before '{' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(200): error C2039: 'New' : is not a member of 'v8::String' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(1599) : see declaration of 'v8::String'
+..\src\bcrypt_node.cc(200): error C3861: 'ThrowException': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(200): error C3861: 'New': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(203): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(203): error C2227: left of '->Int32Value' must point to class/struct/union/generic type [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(204): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(204): error C2228: left of '.As' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(204): error C2059: syntax error : ')' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(207): warning C4244: 'argument' : conversion from 'const ssize_t' to 'unsigned char', possible loss of data [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(209): error C2039: 'Close' : is not a member of 'v8::HandleScope' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(800) : see declaration of 'v8::HandleScope'
+..\src\bcrypt_node.cc(213): error C2065: 'uv_work_t' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(213): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(213): error C2448: 'EncryptAsync' : function-style initializer appears to be a function definition [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(225): error C2065: 'uv_work_t' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(225): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(225): error C2448: 'EncryptAsyncAfter' : function-style initializer appears to be a function definition [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(252): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(252): error C2143: syntax error : missing ',' before '&' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(253): error C2248: 'v8::HandleScope::HandleScope' : cannot access protected member declared in class 'v8::HandleScope' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(816) : see declaration of 'v8::HandleScope::HandleScope'
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(800) : see declaration of 'v8::HandleScope'
+..\src\bcrypt_node.cc(255): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(255): error C2228: left of '.Length' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          type is 'unknown-type'
+..\src\bcrypt_node.cc(256): error C2039: 'New' : is not a member of 'v8::String' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(1599) : see declaration of 'v8::String'
+..\src\bcrypt_node.cc(256): error C3861: 'ThrowException': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(256): error C3861: 'New': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(259): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(259): error C2227: left of '->ToString' must point to class/struct/union/generic type [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(259): error C2512: 'v8::String::Utf8Value' : no appropriate default constructor available [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(260): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(260): error C2227: left of '->ToString' must point to class/struct/union/generic type [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(260): error C2512: 'v8::String::Utf8Value' : no appropriate default constructor available [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(261): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(264): error C2660: 'v8::PersistentBase<T>::New' : function does not take 1 arguments [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          with
+          [
+              T=v8::Function
+          ]
+..\src\bcrypt_node.cc(268): error C2065: 'uv_work_t' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(268): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(268): error C2061: syntax error : identifier 'uv_work_t' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(269): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(269): error C2227: left of '->data' must point to class/struct/union/generic type [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          type is 'unknown-type'
+..\src\bcrypt_node.cc(270): error C2065: 'req' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(270): error C2065: 'EncryptAsync' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(270): error C2065: 'uv_after_work_cb' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(270): error C2146: syntax error : missing ')' before identifier 'EncryptAsyncAfter' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(270): error C2059: syntax error : ')' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(272): error C2660: 'v8::Undefined' : function does not take 0 arguments [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(270): error C3861: 'uv_queue_work': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(270): error C3861: 'uv_default_loop': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(275): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(275): error C2143: syntax error : missing ',' before '&' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(276): error C2248: 'v8::HandleScope::HandleScope' : cannot access protected member declared in class 'v8::HandleScope' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(816) : see declaration of 'v8::HandleScope::HandleScope'
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(800) : see declaration of 'v8::HandleScope'
+..\src\bcrypt_node.cc(278): error C2065: 'args' : undeclared identifier [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(278): error C2228: left of '.Length' must have class/struct/union [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          type is 'unknown-type'
+..\src\bcrypt_node.cc(279): error C2039: 'New' : is not a member of 'v8::String' [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+          C:\Users\CheeLoong\.node-gyp\0.12.4\deps\v8\include\v8.h(1599) : see declaration of 'v8::String'
+..\src\bcrypt_node.cc(279): error C3861: 'ThrowException': identifier not found [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]
+..\src\bcrypt_node.cc(279): fatal error C1003: error count exceeds 100; stopping compilation [C:\Users\CheeLoong\Desktop\SoundNote-master\SoundNote-master\node_modules\bcrypt\build\bcrypt_lib.vcxproj]

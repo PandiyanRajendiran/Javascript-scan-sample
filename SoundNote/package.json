@@ -1,0 +1,25 @@
+{
+  "name": "CSC309Project",
+  "version": "1.0.1",
+  "description": "A web application for the CSC309 course project.",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "connect-mongo": "*",
+    "cookie-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "mongoose": "*",
+    "node-gyp": "*",
+    "simple-recaptcha": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soon Chee Loong",
+  "license": "ISC"
+}

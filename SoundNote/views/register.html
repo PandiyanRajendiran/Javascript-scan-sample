@@ -1,0 +1,56 @@
+<% include header.html %>
+		<div class="page-wrap">
+
+		<!--Background Images -->
+		<img id="piano_img" src="/res/imgs/piano.jpg"/>
+		<img id="guitar_img" src="/res/imgs/guitar.jpg"/>
+		<img id="sheet_music_img" src="/res/imgs/sheet_music.jpg"/>
+		
+		<div id="reg-content">
+			<div class="row">
+				<div id="signup_form_wrapper" class="col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10">
+					<form id="signup_form" method="post" action="/register" role="form">
+						<div id="sign_up_container">
+							<a href="/">
+								<img id ="logo" src="/res/imgs/icons/logo.svg" alt="logo">
+							</a>
+                            <% if(notif) {%>
+                                <p style="text-align: center; color: red"><%= notif %></p>
+                            <% }; %>
+							<div class="form-group">
+								
+								<input class="form-control input-lg" id="email" name=
+									"email" placeholder="Your Email" type="email" autofocus required>
+							</div>
+		 
+							<div class="form-group">
+								<input class="form-control input-lg" id="reemail" name=
+									"reemail" placeholder="Re-enter Email" type="email" required>
+							</div>
+							<div class="form-group">
+									<input class="form-control input-lg" id="password"
+										name="pass" placeholder="Password" type=
+											"password" required>
+							</div>
+									
+							<div class="form-group">
+									<input class="form-control input-lg" id="repassword"
+										name="repass" placeholder="Re-enter Password" type=
+											"password" required>
+							</div>
+									
+							<div class="form-group">
+									<button class="btn btn-success btn-lg" type=
+										"submit">Sign Up</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+            <div class="push">
+            </div>
+
+        </div> <!--End of page wrap-->
+<% include footer.html %>

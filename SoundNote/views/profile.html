@@ -1,0 +1,112 @@
+<% include header.html %>
+        <div class="page-wrap">
+            <!--Bootstrapped nav bar-->
+            <% include navbar.html %>
+
+            <div id="prof-info-wrap" class="center-crop inline">
+
+                <div id="prof-contact-wrap" class="inline">
+                <table id="prof-contact">
+                    <tr>
+                        <td>
+                            <img src="/res/imgs/icons/mail.svg" alt="e-mail" height="25" width="25">
+                        </td>
+                        <td>
+                            <a href="">XXXXXX@email.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/res/imgs/icons/facebook.svg" alt="Facebook profile" height="25" width="25">
+                        </td>
+                        <td>
+                           <a href="">Facebook Profile Link</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/res/imgs/icons/twitter.svg" alt="Twitter profile" height="25" width="25">
+                        </td>
+                        <td>
+                            <a href="">Twitter Profile Link</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/res/imgs/icons/youtube.svg" alt="Youtube Channel" height="25" width="25">
+                        </td>
+                        <td>
+                            <a href="">Youtube Channel Link</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+                <div id="prof-basic-wrap" class="inline"> 
+                        <div class="circle-inner">
+
+                        </div>
+                        <% if(user) { %>
+                            <h1><%= user %>
+                        <% }; %>
+                    
+                    <div id="prof-rank-wrap">
+                        <p>
+                            Rank XX
+                            <br>
+                            <%= score + ' points'  %>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+
+            <div id="stats-wrap">
+				<h1 style="font-size:50px"> My Scores </h1>
+				<div id="game_score_graph">
+				<table>
+				<tr>
+					<td>
+						<p>Game #1:</p> 
+					</td>
+					<td>
+						<div id="game_1_score">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Game #2:</p> 
+					</td>
+					<td>
+						<div id="game_2_score">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Game #3:</p> 
+					</td>
+					<td>
+						<div id="game_3_score">
+						</div>
+					</td>
+				</tr>
+				</table>
+				</div>
+            </div>
+            
+            <div class="push">
+            </div>
+
+        </div> <!--End of page wrap-->
+		<script>
+			
+			document.getElementById("game_1_score").style.width = "" + <%= score1 %> + "px";
+			document.getElementById("game_2_score").style.width = "" + <%= score2 %> + "px";
+			document.getElementById("game_3_score").style.width = "" + <%= score3 %> + "px";
+		</script>
+<% include footer.html %>

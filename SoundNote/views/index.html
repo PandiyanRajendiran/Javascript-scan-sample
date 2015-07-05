@@ -1,0 +1,86 @@
+<% include header.html %>
+        <div class="page-wrap">
+            <!--Bootstrapped nav bar-->
+            <% include navbar.html %>
+            
+           <section>
+               <div id="landing">
+                    <div id="landing-content">
+                        <pre class="override-pre">c o m p e t i t i v e    e a r    t r a i n i n g</pre>
+                        <img src="/res/imgs/icons/logo-white.svg" alt="soundNote">
+                        
+                        <p>accessible - simple - fun<br>
+                        Let's play!</p>
+                    </div>
+                    <% if(!auth) {%>    
+                        <form method="post" action="/login" role="form">
+
+                            <div id="login-wrap">
+                                <div class="form-group"> 
+                                        <input class="form-control input-lg" id="email" name="email" placeholder="Your Email" type="text">
+                                </div>
+
+                                <div class="form-group">
+                                        <input class="form-control input-lg" id="email" name="pass" placeholder="Password" type="password">
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-success btn-lg" type="login-submit">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    <% }; %>
+
+                    <img id="deco" src="/res/imgs/note-blob-turquoise2.svg" class="inline">
+                </div>
+            </section>
+
+            <!-- Intro section-->
+            <section>
+                <div id="intro-wrap" >
+                    <h2>Welcome.</h2>
+                    <div id="intro" class="inline">
+                        We at SoundNote provide an excellent service to music students for ear training. The method of training is through interactive games of different levels. Users are evaluated through a scoring system where they can compete with other users. This provides an atmosphere conducive to learning as we all know that everyone wants to be #1 in a competition.
+                    </div>
+                </div>
+
+                <div class="angled-bottom turq-bottom">
+                </div>
+            </section>
+
+            <section id="brief">
+                <div>
+                   <div class="briefer inline">
+                        <img src="/res/imgs/glyphicons_076_headphones.png"alt="listen">
+                        <div>
+                            Listen
+                         </div>
+                   </div>
+                    <div class="briefer inline">
+                        <img src="/res/imgs/glyphicons_017_music.png" alt="play">
+                        <div>
+                            Identify
+                         </div>
+                   </div>
+                    <div class="briefer inline">
+                        <img src="/res/imgs/glyphicons_086_display.png" alt="practice">
+                        <div>
+                            Play
+                         </div>
+                   </div>
+                </div>
+            </section>
+
+            <section id="team">
+                <div class="angled-top purple-top">
+                </div>
+
+                <div class="purple">
+                </div>
+            </section>
+            
+            <div class="push">
+            </div>
+
+        </div> <!--End of page wrap-->
+<% include footer.html %>
