@@ -9,7 +9,8 @@ var mongoose = require('mongoose');
 var app = express();
 
 //connect to database
-mongoose.connect('localhost/csc309');
+//Update for heroku to detect environment variable
+mongoose.connect(process.env.MONGOLAB_URI || 'localhost/csc309');
 
 //configuration
 app.set('port', process.env.PORT || 3000);
