@@ -3,6 +3,10 @@
   "version": "1.0.2",
   "description": "A web application for the CSC309 course project.",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scheeloong/Javascript.git"
+  },
   "dependencies": {
     "bcrypt": "*",
     "body-parser": "*",
@@ -12,7 +16,7 @@
     "ejs": "*",
     "express": "*",
     "express-session": "*",
-    "mongoose": "*",
+    "mongoose": "^4.0.0",
     "node-gyp": "*",
     "simple-recaptcha": "*"
   },
